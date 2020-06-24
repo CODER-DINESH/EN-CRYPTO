@@ -5,7 +5,7 @@ Install PyAesCrypt to run this program
 
 pip install PyAesCrypt 
 
-<b><h1>Overview<h1><b>
+# Overview
   
 <b>Have you ever wounder what if someone read your files?<b>
 <b>Do you want to send a encrypted file to you friend?<b>
