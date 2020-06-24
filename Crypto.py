@@ -8,23 +8,23 @@ def crypto():
 
     choice = input("Select your choice:")
 
-    #encrypt a file
+    #To Encrypt a file
     if choice == '1':
-        file1 = input("Enter file path of the file to encrypt:")
-        file2 = input("Enter new file path of a file:")
+        file1 = input("Enter file path of the file to encrypt:") #Enter file name with its File location
+        file2 = input("Enter new file path of a file:") #create new file in any directory and enter the location 
         password = input("Enter password:")
         pyAesCrypt.encryptFile(file1, file2, password, bufferSize)
         print("Encrypted")
 
-    #decrypt a file
+    #tO Decrypt a file
     elif choice == '2':
-        file1 = input("Enter file path of the file to decrypt:")
-        file2 = input("Enter new file path of a file:")
+        file1 = input("Enter file path of the file to decrypt:")  #Enter file name with its File location
+        file2 = input("Enter new file path of a file:") #create new file in any directory and enter the location
         password = input("Enter password:")
         pyAesCrypt.decryptFile(file1,file2,password,bufferSize)
         print("Decrypted")
 
-    #encode a string
+    #To Encode a string
     elif choice == '3':
         message = input("Enter a string: ")
         message_bytes = message.encode('ascii')
@@ -32,6 +32,7 @@ def crypto():
         base64_message = base64_bytes.decode('ascii')
 
         print(base64_message)
+        
         def value():
             option = input("Do you want to save it in a file (y/n): ")
             if option == 'y' or option == 'Y':
@@ -46,7 +47,7 @@ def crypto():
                 value()
         value()
 
-    #decode a string
+    #To Decode a string
     elif choice == '4':
         base64_message = input("Enter the value: ")
         base64_bytes = base64_message.encode('ascii')
@@ -55,7 +56,7 @@ def crypto():
 
         print(message)
 
-    #To exit the script
+    #To exit from the script
     elif choice == '5':
         exit()
 
