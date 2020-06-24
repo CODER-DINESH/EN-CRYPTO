@@ -7,8 +7,8 @@ pip install PyAesCrypt
 
 <h1>Overview<h1>
   
-  <b>Have you ever wounder what if someone read your files?
-  Do you want to send a encrypted file to you friend?<b>
+  <b>Have you ever wounder what if someone read your files?<b>
+  <b>Do you want to send a encrypted file to you friend?<b>
  
   This program is all about encryption and decryption usind PyAesCrypt and base64 library in python
   
